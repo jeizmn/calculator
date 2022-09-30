@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="cal">
+            <div class="output"> 
+                <input type="text" id="result">
+            </div>
+            <div class="row">
+            <button class="btn" id="seven" onclick="diplayNumber(7)">7</button>
+            <button class="btn" id="eight" onclick="diplayNumber(8)">8</button>
+            <button class="btn" id="nine" onclick="diplayNumber(9)">9</button>
+            <button class="btn" onclick="diplayNumber('/')">/</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="four" onclick="diplayNumber(4)">4</button>
+                <button class="btn" id="five" onclick="diplayNumber(5)">5</button>
+                <button class="btn" id="six" onclick="diplayNumber(6)">6</button>
+                <button class="btn" onclick="diplayNumber('*')">*</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="one" onclick="diplayNumber(1)">1</button>
+                <button class="btn" id="two" onclick="diplayNumber(2)">2</button>
+                <button class="btn" id="three" onclick="diplayNumber(3)">3</button>
+                <button class="btn" onclick="diplayNumber('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="clr" onclick="clearBox()">C</button>
+                <button class="btn" id="zero" onclick="diplayNumber(0)">0</button>
+                <button class="btn" id="equ" onclick="evaluateExpression()">=</button>
+                <button class="btn" onclick="diplayNumber('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn" id="clr1" onclick="removeLastItem()">&#9003;</button>
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+</html>
